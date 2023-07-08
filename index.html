@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Virtual Keyboard w/ HTML, CSS & JS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="icon.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Virtual Keyboard w/ HTML, CSS & JS</h1>
+    <h3>Features</h3>
+    <ul>
+        <li>Easy to integrate</li>
+        <li>Responsive</li>
+        <li>Vanilla JS (<strong>no libraries required!</strong>)</li>
+        <li>Smartphone (Window, Android & iOS) compatible!</li>
+    </ul>
+    <textarea class="use-keyboard" placeholder="Default Keyboard" style="position: absolute; top: 130px; right: 30px; width: 300px;"></textarea>
+
+    <input class="use-keyboard-custom" placeholder="Custom Keyboard" style="position: absolute; top: 260px; right: 30px; width: 300px;">
+
+    <textarea class="use-keyboard-custom" placeholder="Custom Keyboard" style="position: absolute; top: 390px; right: 30px; width: 300px;"></textarea>
+
+    <input class="use-keyboard" placeholder="Default Keyboard" style="position: absolute; top: 620px; right: 30px; width: 300px;">
+
+    <script src="plugin.js"></script>
+    <script>
+        // Default Keyboard
+        Kbd1 = Keyboard(".use-keyboard");
+
+        // Custom Keyboard ;))...
+        Kbd2 = Keyboard(".use-keyboard-custom", {"bgcolor":"#1d1d1d"}, [
+            ["7","Home"], ["8","Up"  ], ["9","pagUp"], "Backsp--w","break",
+            ["4","Left"], ["5","None"], ["6","Right"], "Caps--wa", "break",
+            ["1","End" ], ["2","Down"], ["3","pagDn"], "Enter--w", "break",
+             "None"     , ["0","Ins" ], [".","Del"  ], "Done--wd", "break",
+             "Sp--lw"
+        ]);
+    </script>
+</body>
