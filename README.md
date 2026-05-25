@@ -9,5 +9,5 @@ Responsive
 
 Vanilla JS (no libraries required!)
 
-@Smartphone (Window, Android & iOS) compatible!
+**Smartphone (Window, Android & iOS) compatible!**
 
